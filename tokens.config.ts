@@ -8,18 +8,20 @@ export default defineTheme({
     primary: 'system-ui, -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen, Ubuntu, Cantarell, \'Open Sans\', \'Helvetica Neue\', sans-serif'
   },
   color: {
-    grey: '#eee',
+    black: '#0B0D0E',
+    white: '#FFFFFF',
     primary: {
-      50: '#EDF2F8',
-      100: '#DBE5F0',
-      200: '#BACEE3',
-      300: '#96B4D5',
-      400: '#759DC7',
-      500: '#5183B9',
-      600: '#3D6A99',
-      700: '#2D4E71',
-      800: '#1F354C',
-      900: '#0F1924'
+      50: '#EAF6F2',
+      100: '#D2ECE2',
+      200: '#A8DBC6',
+      300: '#7DC9A9',
+      400: '#58B98F',
+      500: '#539F80',  // Base color
+      600: '#44816A',
+      700: '#356253',
+      800: '#26443D',
+      900: '#172824'
     }
+
   }
 })
