@@ -1,5 +1,5 @@
 export default defineAppConfig({
   myTheme: {
-    name: 'My Project'
+    title: 'My Project'
   }
 })

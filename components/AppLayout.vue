@@ -4,7 +4,7 @@ const myTheme = useAppConfig().myTheme
 
 <template>
   <div>
-    <header>{{ myTheme?.name || 'My project' }}</header>
+    <header>{{ myTheme?.title || 'My project' }}</header>
     <main>
       <slot />
     </main>
