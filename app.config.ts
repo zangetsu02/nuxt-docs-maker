@@ -1,5 +1,5 @@
 export default defineAppConfig({
   myTheme: {
-    title: 'My Nuxt Theme'
-  }
+    title: 'My Nuxt Theme',
+  },
 })

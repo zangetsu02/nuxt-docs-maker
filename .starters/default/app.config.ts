@@ -1,5 +1,5 @@
 export default defineAppConfig({
   myTheme: {
-    title: 'Nuxt Docs Maker'
-  }
+    title: 'Nuxt Docs Maker',
+  },
 })

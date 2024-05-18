@@ -1,25 +1,24 @@
-
 export default defineNuxtSchema({
   appConfig: {
     /**
      * myTheme configuration.
      * @studio-icon carbon:blog
-    */
+     */
     myTheme: {
       /**
        * Website title, used as header default title and meta title.
        * @studio-icon carbon:blog
-      */
-      title:  'My Theme',
+       */
+      title: 'My Theme',
       /**
        * Website description, used for meta description.
        * @studio-icon material-symbols:description
-      */
-      description:  'My agency shiny themee',
+       */
+      description: 'My agency shiny themee',
       /**
        * Your website icon, used for your favicon.
        * @studio-icon material-symbols:icecream
-      */
+       */
       icon: 'material-symbols:icecream',
       /**
        * @example '/cover.jpg'
@@ -30,8 +29,8 @@ export default defineNuxtSchema({
         src: '/social-card-preview.png',
         alt: 'An image showcasing my project.',
         width: 400,
-        height: 300
-      }
-    }
-  }
+        height: 300,
+      },
+    },
+  },
 })

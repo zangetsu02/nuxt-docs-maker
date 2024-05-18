@@ -11,24 +11,30 @@ export default defineNuxtConfig({
     // https://content.nuxtjs.org
     '@nuxt/content',
     // https://pinceau.dev
-    'pinceau/nuxt'
+    'pinceau/nuxt',
+    '@nuxt/eslint',
   ],
+  eslint: {
+    config: {
+      standalone: false,
+    },
+  },
   components: [
     { path: resolve('./components'), global: true },
     { path: resolve('./components/content'), global: true },
   ],
   content: {
-    documentDriven: true
+    documentDriven: true,
   },
   pinceau: {
-    studio: true
+    studio: true,
   },
   typescript: {
-    includeWorkspace: true
+    includeWorkspace: true,
   },
   nitro: {
     prerender: {
-      ignore: ['/__pinceau_tokens_config.json', '/__pinceau_tokens_schema.json']
-    }
+      ignore: ['/__pinceau_tokens_config.json', '/__pinceau_tokens_schema.json'],
+    },
   },
 })

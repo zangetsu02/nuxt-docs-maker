@@ -4,11 +4,11 @@
   "version": "0.0.1",
   "main": "./nuxt.config.ts",
   "files": [
-    "nuxt.config.ts",
-    "tokens.config",
-    "layouts",
+    "app.vue",
     "components",
-    "app.vue"
+    "layouts",
+    "nuxt.config.ts",
+    "tokens.config"
   ],
   "scripts": {
     "dev": "nuxi dev .starters/default",
@@ -16,16 +16,19 @@
     "generate": "nuxi generate .starters/default",
     "preview": "nuxi preview .starters/default",
     "prepare": "nuxi prepare && nuxi prepare .starters/default",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@nuxt/content": "^2.6.0",
-    "pinceau": "^0.18.9",
-    "@nuxthq/studio": "^0.13.2"
+    "@nuxthq/studio": "^0.13.2",
+    "pinceau": "^0.18.9"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "^0.1.1",
-    "eslint": "^8.42.0",
+    "@antfu/eslint-config": "^2.18.1",
+    "@nuxt/eslint": "^0.3.12",
+    "eslint": "^9.3.0",
+    "eslint-plugin-format": "^0.1.1",
     "nuxt": "^3.5.2",
     "typescript": "^5.1.3"
   }
