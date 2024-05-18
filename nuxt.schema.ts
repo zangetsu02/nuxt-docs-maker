@@ -11,6 +11,10 @@ export default defineNuxtSchema({
        */
       title: 'My Theme',
       /**
+       * The website title template, to overwrite the default one.
+       */
+      titleTemplate: '%s · Nuxt Docs Maker',
+      /**
        * Website description, used for meta description.
        * @studio-icon material-symbols:description
        */

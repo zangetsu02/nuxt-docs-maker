@@ -1,10 +1,21 @@
 <script setup lang="ts">
-const myTheme = useAppConfig().myTheme
+import { useNuxtDocsMaker } from '~/composables/useNuxtDocsMaker'
+
+const { config } = useNuxtDocsMaker()
+
+useHead({
+  titleTemplate: config.value.titleTemplate,
+})
+
+watch(
+  () => config.value.titleTemplate,
+  () => useHead({ titleTemplate: config.value.titleTemplate }),
+)
 </script>
 
 <template>
   <div>
-    <header>{{ myTheme?.title || 'My project' }}</header>
+    <header>{{ config?.title || 'My project' }}</header>
     <main>
       <slot />
     </main>
