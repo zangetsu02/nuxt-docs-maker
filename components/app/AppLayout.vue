@@ -19,13 +19,3 @@ watch(
     </main>
   </div>
 </template>
-
-<style lang="ts">
-css({
-  body: {
-    backgroundColor: '{color.black}',
-    fontFamily: '{font.primary}',
-    margin: 0,
-  },
-})
-</style>

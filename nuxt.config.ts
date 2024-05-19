@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     // https://pinceau.dev
     'pinceau/nuxt',
     '@nuxt/eslint',
+    '@nuxtjs/color-mode'
   ],
   eslint: {
     config: {
@@ -24,6 +25,13 @@ export default defineNuxtConfig({
     { path: resolve('./components/app'), global: true },
     { path: resolve('./components/content'), global: true },
   ],
+  css: [
+    resolve('./assets/main.css'),
+  ],
+  colorMode: {
+    classSuffix: '',
+    dataValue: 'theme'
+  },
   content: {
     documentDriven: true,
   },
