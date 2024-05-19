@@ -27,6 +27,9 @@ importers:
       '@nuxt/eslint':
         specifier: ^0.3.12
         version: 0.3.13(eslint@9.3.0)(nuxt@3.11.2)(rollup@3.29.4)(typescript@5.4.5)
+      '@nuxtjs/color-mode':
+        specifier: ^3.4.1
+        version: 3.4.1(rollup@3.29.4)
       eslint:
         specifier: ^9.3.0
         version: 9.3.0
@@ -1753,6 +1756,18 @@ packages:
       - supports-color
       - utf-8-validate
     dev: false
+
+  /@nuxtjs/color-mode@3.4.1(rollup@3.29.4):
+    resolution: {integrity: sha512-vZgJqDstxInGw3RGSWbLoCLXtU1mvh1LLeuEA/X3a++DYA4ifwSbNoiSiOyb9qZHFEwz1Xr99H71sXV4IhOaEg==}
+    dependencies:
+      '@nuxt/kit': 3.11.2(rollup@3.29.4)
+      pathe: 1.1.2
+      pkg-types: 1.1.1
+      semver: 7.6.2
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+    dev: true
 
   /@nuxtjs/mdc@0.6.1(rollup@3.29.4):
     resolution: {integrity: sha512-zS5QK7DZ/SBrjqQX1DOy7GnxKy+wbj2+LvooefOWmQqHfLTAqJLVIjuv/BmKnQWiRCq19+uysys3iY42EoY5/A==}
