@@ -5,16 +5,14 @@ const { resolve } = createResolver(import.meta.url)
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   pages: true,
-  modules: [
-    // https://nuxt.studio
-    '@nuxthq/studio',
-    // https://content.nuxtjs.org
-    '@nuxt/content',
-    // https://pinceau.dev
+  modules: [// https://nuxt.studio
+    '@nuxthq/studio', // https://content.nuxtjs.org
+    '@nuxt/content', // https://pinceau.dev
     'pinceau/nuxt',
     '@nuxt/eslint',
     '@nuxtjs/color-mode',
     'nuxt-icon',
+    '@nuxtjs/google-fonts',
   ],
   eslint: {
     config: {
@@ -29,6 +27,11 @@ export default defineNuxtConfig({
   css: [
     resolve('./assets/main.css'),
   ],
+  googleFonts: {
+    families: {
+      Nunito: true,
+    },
+  },
   colorMode: {
     classSuffix: '',
     dataValue: 'theme',

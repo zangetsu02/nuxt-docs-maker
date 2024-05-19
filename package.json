@@ -22,6 +22,7 @@
   "dependencies": {
     "@nuxt/content": "^2.6.0",
     "@nuxthq/studio": "^0.13.2",
+    "@nuxtjs/google-fonts": "^3.2.0",
     "@pinceau/nuxt": "^1.0.0-beta.29",
     "pinceau": "^0.20.1"
   },
