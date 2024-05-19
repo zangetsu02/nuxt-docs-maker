@@ -24,6 +24,9 @@ export default defineNuxtConfig({
     { path: resolve('./components/app'), global: true },
     { path: resolve('./components/content'), global: true },
   ],
+  css: [
+    resolve('./assets/main.css'),
+  ],
   content: {
     documentDriven: true,
   },
