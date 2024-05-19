@@ -15,6 +15,7 @@ const hasDialog = computed(() => navigation.value?.length > 1 || navigation.valu
       <div class="section center" />
 
       <div class="section right">
+        <AppThemeSelect />
         <div class="social-icons" />
       </div>
     </div>

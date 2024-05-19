@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     'pinceau/nuxt',
     '@nuxt/eslint',
     '@nuxtjs/color-mode',
+    'nuxt-icon',
   ],
   eslint: {
     config: {
