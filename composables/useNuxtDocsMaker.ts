@@ -1,4 +1,4 @@
-export function useNuxtDocsMaker() {
+export default function () {
   const appConfig = computed(() => useAppConfig()?.myTheme || {})
   const { navKeyFromPath } = useContentHelpers()
   const { navigation, page } = useContent()
