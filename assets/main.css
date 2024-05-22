@@ -1,4 +1,6 @@
 body {
-  background-color: $dt('color.black');
+  background-color: $dt('body.backgroundColor');
+  color: $dt('body.color');
   font-family: $dt('font.primary');
 }
+

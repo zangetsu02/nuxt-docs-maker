@@ -18,7 +18,7 @@ export default defineNuxtSchema({
        * Website description, used for meta description.
        * @studio-icon material-symbols:description
        */
-      description: 'My agency shiny themee',
+      description: 'My agency shiny theme',
       /**
        * Your website icon, used for your favicon.
        * @studio-icon material-symbols:icecream

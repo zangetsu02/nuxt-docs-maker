@@ -8,90 +8,101 @@ const hasDialog = computed(() => navigation.value?.length > 1 || navigation.valu
 <template>
   <header :class="{ 'has-dialog': hasDialog }">
     <div class="container">
-      <div class="section left">
-        {{ config?.title || 'My project' }}
+      <div class="left">
+        <NuxtLink to="/">
+          <Logo />
+          <span>{{ config?.title || 'My project' }}</span>
+        </NuxtLink>
+
+        <div class="search-container">
+          <button>
+            search
+          </button>
+        </div>
       </div>
 
-      <div class="section center" />
-
-      <div class="section right">
+      <div class="right">
         <AppThemeSelect />
-        <div class="social-icons" />
       </div>
     </div>
   </header>
 </template>
-<!--
-<style lang="ts">
+
+<style scoped lang="ts">
 css({
-  ':deep(.icon)': {
-    width: '{space.4}',
-    height: '{space.4}',
-  },
-
-  '.navbar-logo': {
-    '.left &': {
-      '.has-dialog &': {
-        'display': 'none',
-        '@lg': {
-          display: 'block',
-        },
-      },
-    },
-    '.center &': {
-      'display': 'block',
-      '@lg': {
-        display: 'none',
-      },
-    },
-  },
-
   'header': {
-    'position': 'sticky',
-    'top': 0,
-    'zIndex': 10,
-    'width': '100%',
-    'height': '{header.height}',
-    'border-bottom': '1px solid {border}',
-    '.container': {
-      display: 'grid',
-      height: '100%',
-      gridTemplateColumns: 'repeat(12, minmax(0, 1fr))',
-      gap: '{space.2}',
+    backgroundColor: '{body.backgroundColor}',
+    backdropFilter: 'blur(10px)',
+    borderBottom: '1px solid #262626',
+    marginBottom: '-1px',
+    position: 'sticky',
+    top: 0,
+    height: '{header.height}',
+    zIndex: 50,
+  },
+
+  '.container': {
+    margin: '0px auto',
+    padding: '0px 1rem',
+    maxWidth: '80rem',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: '0.75rem',
+    height: '100%',
+  },
+
+  '.left': {
+    'display': 'flex',
+    'alignItems': 'center',
+    'gap': '0.375rem',
+
+    'a': {
+      display: 'flex',
+      justifyContent: 'flex-end',
+      gap: '0.375rem',
+      fontSize: '1.25rem',
+      lineHeight: '1.75rem',
+      fontWeight: 'bold',
+
+      svg: {
+        width: '1.75rem',
+        height: '1.75rem',
+      },
     },
 
-    '.section': {
+    '.search-container': {
+      '@lg': {
+        display: 'flex',
+      },
       'display': 'flex',
-      'alignItems': 'center',
-      'flex': 'none',
-      '&.left': {
-        'gridColumn': 'span 4 / span 4',
-        '@lg': {
-          marginLeft: 0,
-        },
-      },
-      '&.center': {
-        gridColumn: 'span 4 / span 4',
-        justifyContent: 'center',
-        flex: '1',
-        zIndex: '1',
-      },
-      '&.right': {
-        'display': 'flex',
-        'gridColumn': 'span 4 / span 4',
-        'justifyContent': 'flex-end',
-        'alignItems': 'center',
-        'flex': 'none',
-        'marginRight': 'calc(0px - {space.4})',
-        '.social-icons': {
-          'display': 'none',
-          '@md': {
-            display: 'flex',
-            alignItems: 'center',
-          },
-        },
-      },
+      'marginLeft': '2rem',
+    },
+  },
+  '.right': {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    gap: '0.375rem',
+  },
+
+  '@sm': {
+    '.container': {
+      padding: '0 1.5rem',
+    },
+  },
+
+  '@lg': {
+    '.container': {
+      padding: '0 2rem',
+    },
+
+    '.right': {
+      flexGrow: '1',
+    },
+    '.left': {
+      flexGrow: '1',
     },
   },
 })
-</style> -->
+</style>

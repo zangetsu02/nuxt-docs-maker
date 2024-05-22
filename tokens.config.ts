@@ -1,6 +1,10 @@
 import { defineTheme } from '@pinceau/theme'
 
 export default defineTheme({
+  media: {
+    sm: '(min-width: 640px)',
+    lg: '(min-width: 1024px)',
+  },
   header: {
     height: '64px',
   },
@@ -9,8 +13,8 @@ export default defineTheme({
   },
   border: '#262626',
   color: {
-    black: '#171717',
-    white: '#FFFFFF',
+    black: 'rgb(23,23,23)',
+    white: 'rgb(255,255,255)',
     primary: {
       50: '#EAF6F2',
       100: '#D2ECE2',
@@ -23,7 +27,17 @@ export default defineTheme({
       800: '#26443D',
       900: '#172824',
     },
-
+  },
+  body: {
+    backgroundColor: {
+      initial: '{color.white}',
+      dark: '{color.black}',
+    },
+    color: {
+      initial: '{color.black}',
+      dark: '{color.white}',
+    },
+    fontFamily: '{font.primary}',
   },
 
   space: {
