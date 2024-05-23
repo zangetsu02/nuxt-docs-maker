@@ -6,12 +6,11 @@ export default defineTheme({
     lg: '(min-width: 1024px)',
   },
   header: {
-    height: '64px',
+    height: '4rem',
   },
   font: {
     primary: 'Nunito, "Nunito Fallback: Arial", sans-serif, ui-sans-serif, system-ui, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; ',
   },
-  border: '#262626',
   color: {
     black: 'rgb(23,23,23)',
     white: 'rgb(255,255,255)',
@@ -27,15 +26,32 @@ export default defineTheme({
       800: '#26443D',
       900: '#172824',
     },
+    gray: {
+      50: 'rgb(250 250 250)',
+      100: 'rgb(245 245 245)',
+      200: 'rgb(229 229 229)',
+      300: 'rgb(212 212 212)',
+      400: 'rgb(163 163 163)',
+      500: 'rgb(115 115 115)',
+      600: 'rgb(82 82 82)',
+      700: 'rgb(64 64 64)',
+      800: 'rgb(38 38 38)',
+      900: 'rgb(23 23 23)',
+      950: 'rgb(10 10 10)',
+    },
+  },
+  borderColor: {
+    initial: '{color.gray.200}',
+    dark: '{color.gray.800}',
   },
   body: {
     backgroundColor: {
-      initial: '{color.white}',
-      dark: '{color.black}',
+      initial: 'rgb(255,255,255)',
+      dark: '{color.gray.900}',
     },
     color: {
       initial: '{color.black}',
-      dark: '{color.white}',
+      dark: 'rgb(255,255,255)',
     },
     fontFamily: '{font.primary}',
   },
